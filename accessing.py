@@ -7,11 +7,11 @@ import code as x
 #importing the main file("code" is the name of the file I have used) as a library 
 
 
-x.create("Tippu",25)
+x.create("Tippu",50)
 #to create a key with key_name,value given and with no time-to-live property
 
 
-x.create("Sulthan",70,3600) 
+x.create("Sulthan",60,3600 ) 
 #to create a key with key_name,value given and with time-to-live property value given(number of seconds)
 
 
@@ -23,7 +23,7 @@ x.read("Sulthan")
 #it returns the value of the respective key in Jasonobject format if the TIME-TO-LIVE IS NOT EXPIRED else it returns an ERROR
 
 
-x.create("Tippu",50)
+x.create("Tippu",75)
 #it returns an ERROR since the key_name already exists in the database
 #To overcome this error 
 #either use modify operation to change the value of a key
